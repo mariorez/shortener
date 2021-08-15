@@ -1,3 +1,9 @@
 micronaut:
   application:
-    name: shortener
+    name: shortener-micronaut
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/shortener
+    driverClassName: org.postgresql.Driver
+    username: shortener
+    password: shortener

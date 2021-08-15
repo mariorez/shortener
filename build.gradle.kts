@@ -31,12 +31,14 @@ dependencies {
     implementation("io.micronaut.grpc:micronaut-grpc-runtime")
     implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")
     implementation("io.micronaut:micronaut-validation")
+    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3")
     implementation("io.grpc:grpc-kotlin-stub:1.1.0")
     implementation("javax.annotation:javax.annotation-api")
 
+    runtimeOnly("org.postgresql:postgresql")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 

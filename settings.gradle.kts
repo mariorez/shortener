@@ -1,2 +1,2 @@
 
-rootProject.name="shortener"
+rootProject.name="shortener-micronaut"
